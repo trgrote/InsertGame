@@ -26,6 +26,8 @@ GameObject:
   - component: {fileID: 114832347669303214}
   - component: {fileID: 114025086992988002}
   - component: {fileID: 114809100798035920}
+  - component: {fileID: 114662626351365918}
+  - component: {fileID: 114393171222300222}
   m_Layer: 0
   m_Name: Person
   m_TagString: Untagged
@@ -58,7 +60,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -80,7 +82,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.53696454}
   serializedVersion: 2
-  m_Radius: 0.3780355
+  m_Radius: 0.55
 --- !u!114 &114025086992988002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -90,6 +92,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f807a392d16fe49f9a7a9d3220677fd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114393171222300222
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1783528039251680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0f0902c28452478ea2d719c296cfc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deadPerson: {fileID: 1730620617057734, guid: bd7be87101e7a46308455e3b73758149, type: 2}
+--- !u!114 &114662626351365918
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1783528039251680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29b89ca1ab3714beb82e636ed706dfa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114809100798035920
