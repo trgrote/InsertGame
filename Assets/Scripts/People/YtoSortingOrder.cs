@@ -15,8 +15,7 @@ public class YtoSortingOrder : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		int pos = Mathf.RoundToInt(transform.position.y);
-		pos /= 3;
+		int pos = Mathf.RoundToInt(transform.position.y * 100);
 		sprite.sortingOrder = -pos;
 	}
 }
