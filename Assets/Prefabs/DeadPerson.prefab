@@ -22,6 +22,9 @@ GameObject:
   - component: {fileID: 212125757844427926}
   - component: {fileID: 114739354974734562}
   - component: {fileID: 114200949588940456}
+  - component: {fileID: 82378777875908436}
+  - component: {fileID: 114577415884384534}
+  - component: {fileID: 169043400962977274}
   m_Layer: 0
   m_Name: DeadPerson
   m_TagString: Untagged
@@ -42,6 +45,86 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &82378777875908436
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1730620617057734}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 0.25
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!114 &114200949588940456
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53,6 +136,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f898e5926d06e4495972a28a28acc13d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114577415884384534
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1730620617057734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 508b84769eed14de896222da46a95844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chanceToPlay: 0.2
+  clips:
+  - {fileID: 8300000, guid: 52b3fb3f68b1c427e8e88a15f52fc4c6, type: 3}
+  - {fileID: 8300000, guid: 876aa95544a334339828216ccb0234d1, type: 3}
+  - {fileID: 8300000, guid: 30dd7602c1c574228a5fb77363a6f304, type: 3}
+  - {fileID: 8300000, guid: b235451a7fde642b7be224fcaf87812f, type: 3}
+  - {fileID: 8300000, guid: 8440b14c7e8c04047a76f07396cf002c, type: 3}
+  - {fileID: 8300000, guid: 251a65fc56ecc478995f5768daa70177, type: 3}
+  - {fileID: 8300000, guid: f86b902ba2a284f32841fc8caf9e6c6a, type: 3}
+  - {fileID: 8300000, guid: 2b898e5f39af648e8ac92c4a6239c6d3, type: 3}
 --- !u!114 &114739354974734562
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -64,6 +168,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e358d11c496d47e985cd97a52472130, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!169 &169043400962977274
+AudioLowPassFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1730620617057734}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_LowpassResonanceQ: 1
+  lowpassLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0.13636364
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!212 &212125757844427926
 SpriteRenderer:
   m_ObjectHideFlags: 1
