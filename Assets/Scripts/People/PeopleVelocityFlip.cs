@@ -18,7 +18,7 @@ public class PeopleVelocityFlip : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		if (Mathf.Approximately(body.velocity.x, 0))
+		if (!Mathf.Approximately(body.velocity.x, 0))
 			sprite.flipX = body.velocity.x < 0;
 	}
 }
