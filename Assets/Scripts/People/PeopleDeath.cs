@@ -19,13 +19,4 @@ public class PeopleDeath : MonoBehaviour
 		// Do what all advertisers should do
 		Destroy(gameObject);   // kill self
 	}
-
-	void Update()
-	{
-		// Test
-		if (Input.GetKeyDown(KeyCode.Space))
-		{
-			GetComponent<PeopleState>().Alive = false;
-		}
-	}
 }
