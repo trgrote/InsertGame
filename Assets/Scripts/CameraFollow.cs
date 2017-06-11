@@ -10,6 +10,7 @@ public class CameraFollow : MonoBehaviour
 	[SerializeField] public Transform target;
 	// there's not really a unit for this guy
 	[SerializeField] private float trackSpeed = 0.5f;
+	private Vector3 offset = new Vector3(0, 5, 0);
 
 	private float initialZ = -10;
 
@@ -27,7 +28,7 @@ public class CameraFollow : MonoBehaviour
 
 			position = Vector3.Lerp(
 				position,
-				target.position,
+				target.position + offset,
 				Time.deltaTime * trackSpeed
 			);
 
