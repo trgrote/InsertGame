@@ -285,12 +285,14 @@ public static class SpriteExploder {
         //Create and Add Polygon Collider
         PolygonCollider2D collider = piece.AddComponent<PolygonCollider2D>();
         collider.SetPath(0, calcPolyColliderPoints(region,diff));
+		collider.isTrigger = true;
 
         //Create and Add Rigidbody
         Rigidbody2D rigidbody = piece.AddComponent<Rigidbody2D>();
         rigidbody.velocity = origVelocity;
+		rigidbody.drag = 3.0f;
 
-
+		DieAfterMinute dead = piece.AddComponent<DieAfterMinute> ();
 
         return piece;
     }
