@@ -106,6 +106,8 @@ public class WhaleMovement : MonoBehaviour {
 		case WhaleState.Jump2:
 			GetComponent<SpriteRenderer> ().sprite = SecondJump;
 			GetComponent<TrailRenderer> ().enabled = true;
+			GetComponent<TrailRenderer> ().sortingLayerName = "Whale";
+			GetComponent<TrailRenderer> ().sortingOrder = 0;
 			body.drag = 3.0f;
 			audio.volume -= Time.deltaTime;
 			if (Input.GetKeyDown (KeyCode.Space)) 
