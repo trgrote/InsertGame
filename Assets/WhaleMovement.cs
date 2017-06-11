@@ -20,6 +20,8 @@ public class WhaleMovement : MonoBehaviour {
 	private AudioSource audio;
 	private float currentAngle;
 	private float spriteAngle;
+	private bool isPastCoast;
+	[SerializeField] private Sprite Swimming;
 	[SerializeField] private Sprite FirstJump;
 	[SerializeField] private Sprite SecondJump;
 	[SerializeField] private Sprite Bloated;
@@ -40,6 +42,7 @@ public class WhaleMovement : MonoBehaviour {
 		state = WhaleState.Sitting;
 		timeAllotted = 0;
 		currentAngle = 0;
+		isPastCoast = false;
 	}
 	
 	// Update is called once per frame
@@ -56,6 +59,12 @@ public class WhaleMovement : MonoBehaviour {
 			audio.clip = JumpNoise;
 			audio.Play ();
 		}
+		if (isPastCoast && (state == WhaleState.Moving || state == WhaleState.Sitting)) {
+			GetComponent<SpriteRenderer> ().color = new Color (255, 255, 255);
+			audio.clip = SkidNoise;
+			audio.Play ();
+			state = WhaleState.Jump2;
+		}
 		switch (state) 
 		{
 		case WhaleState.Moving:
@@ -69,6 +78,7 @@ public class WhaleMovement : MonoBehaviour {
 			}
 			transform.Rotate (Vector3.forward * spriteAngle);
 			body.AddForce (new Vector2 (currentAngle, 5));
+
 			break;
 		case WhaleState.Jump1:
 			GetComponent<SpriteRenderer> ().sprite = FirstJump;
@@ -78,7 +88,14 @@ public class WhaleMovement : MonoBehaviour {
 			{
 				audio.clip = SkidNoise;
 				audio.Play ();
-				state = WhaleState.Jump2; 
+				if (isPastCoast) {
+					state = WhaleState.Jump2; 
+				} else {
+					timeAllotted = 0;
+					GetComponent<SpriteRenderer> ().sprite = Swimming;
+					GetComponent<SpriteRenderer> ().color = new Color (255, 255, 255);
+					state = WhaleState.Sitting;
+				}
 			}
 			break;
 		case WhaleState.Jump2:
@@ -109,19 +126,30 @@ public class WhaleMovement : MonoBehaviour {
 			GetComponent<Explodable> ().explode ();
 			Instantiate (CraterPrefab, transform.position, Quaternion.identity);
 			var circlePosition = new Vector2 (transform.position.x, transform.position.y);
-			RaycastHit2D[] people = Physics2D.CircleCastAll (circlePosition, 2.5f, Vector2.up);
+			RaycastHit2D[] people = Physics2D.CircleCastAll (circlePosition, 5.0f, Vector2.up);
 			foreach (RaycastHit2D person in people) 
 			{
 				var personPosition = person.point;
 				var power = personPosition - circlePosition;
 				power.Normalize ();
 				power *= Random.Range (0, 10);
-				person.rigidbody.AddForce (power, ForceMode2D.Impulse);
+				if (person.rigidbody != null) 
+				{
+					person.rigidbody.AddForce (power, ForceMode2D.Impulse);
+				}
 			}
-			Debug.Log (people.Length);
 			//body.AddForce (new Vector2 (100, 100), ForceMode2D.Impulse);
 			state = WhaleState.Done;
 			break;
+		}
+	}
+
+	void OnTriggerEnter2D(Collider2D coll)
+	{
+		Debug.Log ("HIT THE COAST LINE.");
+		if (coll.gameObject.name == "WhaleCoastBreak") 
+		{
+			isPastCoast = true;
 		}
 	}
 }

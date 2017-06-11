@@ -18497,6 +18497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79bcd8887d6c1694c8d2d2ff97e50bde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Swimming: {fileID: 21300000, guid: 3bdcf490335cb4eb0952b6e040dd1ec4, type: 3}
   FirstJump: {fileID: 21300000, guid: 4635fed623ccf48e59efbc0f130247d9, type: 3}
   SecondJump: {fileID: 21300000, guid: cc4bf8958bd774bea84dd64113969983, type: 3}
   Bloated: {fileID: 21300000, guid: 090f6a857d9f04ee6896d69b640ec0c3, type: 3}
