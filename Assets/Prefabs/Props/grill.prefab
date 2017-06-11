@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212521591010362122}
   - component: {fileID: 61555993625574192}
   - component: {fileID: 114291139082630124}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grill
   m_TagString: prop
   m_Icon: {fileID: 0}

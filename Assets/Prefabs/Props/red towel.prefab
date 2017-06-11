@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4060278182943808}
   - component: {fileID: 212578412002719506}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: red towel
   m_TagString: Untagged
   m_Icon: {fileID: 0}

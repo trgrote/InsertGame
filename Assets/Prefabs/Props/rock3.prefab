@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212853757323801828}
   - component: {fileID: 114057100697391948}
   - component: {fileID: 61955182481968156}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: rock3
   m_TagString: prop
   m_Icon: {fileID: 0}

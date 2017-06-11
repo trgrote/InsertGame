@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212168267213961482}
   - component: {fileID: 61145676607265980}
   - component: {fileID: 114231206760410622}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: cooler
   m_TagString: prop
   m_Icon: {fileID: 0}

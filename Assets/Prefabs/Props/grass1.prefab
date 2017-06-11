@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212300495285444342}
   - component: {fileID: 114843205718689924}
   - component: {fileID: 61001444133749024}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grass1
   m_TagString: prop
   m_Icon: {fileID: 0}

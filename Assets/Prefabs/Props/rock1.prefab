@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212625196585132646}
   - component: {fileID: 114602466803972618}
   - component: {fileID: 61407389612130686}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: rock1
   m_TagString: prop
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.59, y: 1.32}
+    oldSize: {x: 1.66, y: 1.59}
     newSize: {x: 1.76, y: 1.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
