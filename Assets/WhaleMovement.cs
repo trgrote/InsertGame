@@ -85,9 +85,11 @@ public class WhaleMovement : MonoBehaviour {
 			GetComponent<SpriteRenderer> ().sprite = SecondJump;
 			GetComponent<TrailRenderer> ().enabled = true;
 			body.drag = 3.0f;
+			audio.volume -= Time.deltaTime;
 			if (Input.GetKeyDown (KeyCode.Space)) 
 			{
 				state = WhaleState.Bloat;
+				audio.volume = 1.0f;
 				audio.clip = FartNoise;
 				audio.Play ();
 			}
