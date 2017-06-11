@@ -60,7 +60,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 1
+  m_LinearDrag: 0.5
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -140,15 +140,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   possibleSprites:
-  - {fileID: 21300000, guid: dbd6d8f73d8c84f658186a5d5a378b48, type: 3}
-  - {fileID: 21300000, guid: b37ea7f894d574e8298bec62ef1a9b7d, type: 3}
-  - {fileID: 21300000, guid: a445a9f426bd34498a73dc3edaee0b0c, type: 3}
-  - {fileID: 21300000, guid: d60ac96f0e2f34fcb93a21a1aef8a32e, type: 3}
-  - {fileID: 21300000, guid: 2e178b6aca9074914a7a4d171d0f2ac7, type: 3}
-  - {fileID: 21300000, guid: 698c752d178ce4e059d2a838519cb1a0, type: 3}
-  - {fileID: 21300000, guid: 629792e358dad4de4adde5b77e3864e3, type: 3}
-  - {fileID: 21300000, guid: 29abd5ce36df647dfa62e38b189cf0fe, type: 3}
-  - {fileID: 21300000, guid: 98bfe828bc7614e878de92cf44029b3c, type: 3}
+  - {fileID: 21300000, guid: c8571ed17c5ea456796a729a8c435193, type: 3}
+  - {fileID: 21300002, guid: c8571ed17c5ea456796a729a8c435193, type: 3}
+  - {fileID: 21300004, guid: c8571ed17c5ea456796a729a8c435193, type: 3}
+  - {fileID: 21300006, guid: c8571ed17c5ea456796a729a8c435193, type: 3}
+  - {fileID: 21300008, guid: c8571ed17c5ea456796a729a8c435193, type: 3}
+  - {fileID: 21300010, guid: c8571ed17c5ea456796a729a8c435193, type: 3}
+  - {fileID: 21300012, guid: c8571ed17c5ea456796a729a8c435193, type: 3}
+  - {fileID: 21300014, guid: c8571ed17c5ea456796a729a8c435193, type: 3}
+  - {fileID: 21300016, guid: c8571ed17c5ea456796a729a8c435193, type: 3}
 --- !u!114 &114943362629601342
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -190,7 +190,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 755336367
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: dbd6d8f73d8c84f658186a5d5a378b48, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
