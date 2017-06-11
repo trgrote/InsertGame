@@ -175,10 +175,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   possibleSprites:
-  - {fileID: 21300000, guid: 5ab9120b2ac0c45fbb65acaf2d953edd, type: 3}
-  - {fileID: 21300000, guid: acb5ae2aa9ad546a2917e5e2134cf9ad, type: 3}
-  - {fileID: 21300000, guid: a2f55066808af4425b7c603497f91318, type: 3}
-  - {fileID: 21300000, guid: 742daa269bfaa435ab720d262a1f9ce0, type: 3}
+  - {fileID: 21300022, guid: 9b4b6bef28dd84f6c869142929b5eec8, type: 3}
+  - {fileID: 21300028, guid: 9b4b6bef28dd84f6c869142929b5eec8, type: 3}
+  - {fileID: 21300030, guid: 9b4b6bef28dd84f6c869142929b5eec8, type: 3}
+  - {fileID: 21300032, guid: 9b4b6bef28dd84f6c869142929b5eec8, type: 3}
 --- !u!114 &114739354974734562
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -243,7 +243,7 @@ SpriteRenderer:
   m_SortingLayerID: 755336367
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5ab9120b2ac0c45fbb65acaf2d953edd, type: 3}
+  m_Sprite: {fileID: 21300022, guid: 9b4b6bef28dd84f6c869142929b5eec8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

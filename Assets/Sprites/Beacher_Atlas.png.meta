@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 9b4b6bef28dd84f6c869142929b5eec8
-timeCreated: 1497193514
+timeCreated: 1497195586
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -30,6 +30,9 @@ TextureImporter:
     21300046: Beacher_Atlas_23
     21300048: Beacher_Atlas_24
     21300050: Beacher_Atlas_25
+    21300052: Beacher_Atlas_26
+    21300054: Beacher_Atlas_27
+    21300056: Beacher_Atlas_28
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -125,7 +128,7 @@ TextureImporter:
         serializedVersion: 2
         x: 27
         y: 812
-        width: 103
+        width: 104
         height: 190
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -136,8 +139,8 @@ TextureImporter:
       name: Beacher_Atlas_1
       rect:
         serializedVersion: 2
-        x: 210
-        y: 794
+        x: 140
+        y: 802
         width: 124
         height: 200
       alignment: 0
@@ -149,10 +152,10 @@ TextureImporter:
       name: Beacher_Atlas_2
       rect:
         serializedVersion: 2
-        x: 392
-        y: 797
+        x: 263
+        y: 804
         width: 93
-        height: 200
+        height: 201
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,9 +165,9 @@ TextureImporter:
       name: Beacher_Atlas_3
       rect:
         serializedVersion: 2
-        x: 537
-        y: 807
-        width: 132
+        x: 359
+        y: 821
+        width: 133
         height: 173
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -175,10 +178,10 @@ TextureImporter:
       name: Beacher_Atlas_4
       rect:
         serializedVersion: 2
-        x: 727
-        y: 801
-        width: 110
-        height: 199
+        x: 499
+        y: 808
+        width: 111
+        height: 201
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,10 +191,10 @@ TextureImporter:
       name: Beacher_Atlas_5
       rect:
         serializedVersion: 2
-        x: 881
-        y: 804
+        x: 611
+        y: 807
         width: 113
-        height: 200
+        height: 201
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -201,10 +204,10 @@ TextureImporter:
       name: Beacher_Atlas_6
       rect:
         serializedVersion: 2
-        x: 32
-        y: 552
-        width: 140
-        height: 180
+        x: 724
+        y: 807
+        width: 132
+        height: 197
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,10 +217,10 @@ TextureImporter:
       name: Beacher_Atlas_7
       rect:
         serializedVersion: 2
-        x: 208
-        y: 546
-        width: 105
-        height: 194
+        x: 14
+        y: 610
+        width: 171
+        height: 195
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,10 +230,10 @@ TextureImporter:
       name: Beacher_Atlas_8
       rect:
         serializedVersion: 2
-        x: 326
-        y: 543
-        width: 171
-        height: 195
+        x: 207
+        y: 648
+        width: 144
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,10 +243,10 @@ TextureImporter:
       name: Beacher_Atlas_9
       rect:
         serializedVersion: 2
-        x: 527
-        y: 620
-        width: 144
-        height: 139
+        x: 382
+        y: 658
+        width: 162
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,10 +256,10 @@ TextureImporter:
       name: Beacher_Atlas_10
       rect:
         serializedVersion: 2
-        x: 732
-        y: 601
-        width: 132
-        height: 149
+        x: 572
+        y: 664
+        width: 128
+        height: 124
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -264,6 +267,19 @@ TextureImporter:
       tessellationDetail: 0
     - serializedVersion: 2
       name: Beacher_Atlas_11
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 641
+        width: 189
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Beacher_Atlas_12
       rect:
         serializedVersion: 2
         x: 22
@@ -276,26 +292,13 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Beacher_Atlas_12
-      rect:
-        serializedVersion: 2
-        x: 542
-        y: 448
-        width: 162
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
       name: Beacher_Atlas_13
       rect:
         serializedVersion: 2
-        x: 855
-        y: 459
-        width: 126
-        height: 124
+        x: 182
+        y: 471
+        width: 134
+        height: 149
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,10 +308,10 @@ TextureImporter:
       name: Beacher_Atlas_14
       rect:
         serializedVersion: 2
-        x: 225
-        y: 246
-        width: 193
-        height: 163
+        x: 330
+        y: 428
+        width: 185
+        height: 174
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -318,10 +321,10 @@ TextureImporter:
       name: Beacher_Atlas_15
       rect:
         serializedVersion: 2
-        x: 414
-        y: 274
-        width: 4
-        height: 12
+        x: 547
+        y: 444
+        width: 200
+        height: 184
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,10 +334,10 @@ TextureImporter:
       name: Beacher_Atlas_16
       rect:
         serializedVersion: 2
-        x: 443
-        y: 224
-        width: 187
-        height: 185
+        x: 785
+        y: 468
+        width: 197
+        height: 152
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -342,6 +345,58 @@ TextureImporter:
       tessellationDetail: 0
     - serializedVersion: 2
       name: Beacher_Atlas_17
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 424
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Beacher_Atlas_18
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 251
+        width: 189
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Beacher_Atlas_19
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 250
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Beacher_Atlas_20
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 224
+        width: 189
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Beacher_Atlas_21
       rect:
         serializedVersion: 2
         x: 673
@@ -354,7 +409,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Beacher_Atlas_18
+      name: Beacher_Atlas_22
       rect:
         serializedVersion: 2
         x: 886
@@ -367,33 +422,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Beacher_Atlas_19
-      rect:
-        serializedVersion: 2
-        x: 218
-        y: 264
-        width: 5
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Beacher_Atlas_20
-      rect:
-        serializedVersion: 2
-        x: 280
-        y: 237
-        width: 8
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Beacher_Atlas_21
+      name: Beacher_Atlas_23
       rect:
         serializedVersion: 2
         x: 55
@@ -406,20 +435,20 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Beacher_Atlas_22
+      name: Beacher_Atlas_24
       rect:
         serializedVersion: 2
         x: 243
-        y: 17
+        y: 16
         width: 179
-        height: 162
+        height: 163
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Beacher_Atlas_23
+      name: Beacher_Atlas_25
       rect:
         serializedVersion: 2
         x: 443
@@ -432,26 +461,39 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Beacher_Atlas_24
+      name: Beacher_Atlas_26
       rect:
         serializedVersion: 2
-        x: 638
+        x: 636
         y: 16
-        width: 173
-        height: 148
+        width: 176
+        height: 146
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Beacher_Atlas_25
+      name: Beacher_Atlas_27
       rect:
         serializedVersion: 2
         x: 834
         y: 23
         width: 159
         height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Beacher_Atlas_28
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 807
+        width: 108
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
