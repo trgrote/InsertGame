@@ -582,7 +582,7 @@ public static class SpriteExploder {
         {
             Material mat = new Material(Shader.Find("Sprites/Default"));
             mat.SetTexture("_MainTex", sRend.sprite.texture);
-            mat.color = sRend.color;
+            //mat.color = sRend.color;
             return mat;
         }
         else

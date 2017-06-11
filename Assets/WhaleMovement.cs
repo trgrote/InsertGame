@@ -121,7 +121,7 @@ public class WhaleMovement : MonoBehaviour {
 			GetComponent<TrailRenderer> ().sortingLayerName = "Whale";
 			GetComponent<TrailRenderer> ().sortingOrder = 0;
 			var circlePosition2 = new Vector2 (transform.position.x, transform.position.y);
-			RaycastHit2D[] people2 = Physics2D.CircleCastAll (circlePosition2, 1.0f, Vector2.up);
+			RaycastHit2D[] people2 = Physics2D.CircleCastAll (circlePosition2, 3.0f, Vector2.up, 1.5f);
 			foreach (RaycastHit2D person in people2) {
 				var personPosition2 = person.point;
 				var power2 = personPosition2 - circlePosition2;
