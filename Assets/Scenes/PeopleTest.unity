@@ -9922,6 +9922,26 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114577415884384534, guid: bd7be87101e7a46308455e3b73758149,
+        type: 2}
+      propertyPath: clips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: c9b46d5ed88214fdfb2cc991a35eea9c, type: 3}
+    - target: {fileID: 114577415884384534, guid: bd7be87101e7a46308455e3b73758149,
+        type: 2}
+      propertyPath: clips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: f0f169e75504a411aa496fef7442189b, type: 3}
+    - target: {fileID: 114577415884384534, guid: bd7be87101e7a46308455e3b73758149,
+        type: 2}
+      propertyPath: clips.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: ac1e702ab1d8f4daca4d081cc446d3f8, type: 3}
+    - target: {fileID: 114577415884384534, guid: bd7be87101e7a46308455e3b73758149,
+        type: 2}
+      propertyPath: clips.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: 22016d25dc22c4222b07a7fca207e78d, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bd7be87101e7a46308455e3b73758149, type: 2}
   m_IsPrefabParent: 0
