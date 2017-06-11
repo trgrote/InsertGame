@@ -5,13 +5,35 @@ using UnityEngine;
 // The point of this script is to start the pan animation and then when it ends,
 // turn on the whale tracking crap
 [RequireComponent(typeof(Animator), typeof(CameraFollow), typeof(CameraSizeScaling))]
-public class CameraAnimationHandler : MonoBehaviour
+public class CameraAnimationHandler : MonoBehaviour, IEventHandler
 {
 	private WhaleSpawner spawner;
 
 	void Start()
 	{
 		spawner = FindObjectOfType<WhaleSpawner>();
+
+		EventBroadcaster.registerHandler<WhaleHasDiedEvent>(this);
+	}
+
+	void OnDisable()
+	{
+		EventBroadcaster.unregsterHandler(this);
+	}
+
+	public void handleEvent( IGameEvent evt )
+	{
+		if (evt is WhaleHasDiedEvent)
+		{
+			StartCoroutine(WaitAndSee());
+		}
+	}
+
+	IEnumerator WaitAndSee()
+	{
+		yield return new WaitForSeconds(3);
+		OnWhaleDeath();
+		yield return null;
 	}
 
 	// When the pan animation ends, then turn on these bags of buttholes
@@ -43,6 +65,8 @@ public class CameraAnimationHandler : MonoBehaviour
 		GetComponent<CameraSizeScaling>().enabled = false;
 
 		// Start animation again
-		GetComponent<Animator>().enabled = true;
+		var anim = GetComponent<Animator>();
+		anim.enabled = true;
+		anim.Play("CameraPan", -1, 0f);
 	}
 }
