@@ -1,9 +1,35 @@
 fileFormatVersion: 2
 guid: 9b4b6bef28dd84f6c869142929b5eec8
-timeCreated: 1497195085
-licenseType: Free
+timeCreated: 1497193514
+licenseType: Pro
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Beacher_Atlas_0
+    21300002: Beacher_Atlas_1
+    21300004: Beacher_Atlas_2
+    21300006: Beacher_Atlas_3
+    21300008: Beacher_Atlas_4
+    21300010: Beacher_Atlas_5
+    21300012: Beacher_Atlas_6
+    21300014: Beacher_Atlas_7
+    21300016: Beacher_Atlas_8
+    21300018: Beacher_Atlas_9
+    21300020: Beacher_Atlas_10
+    21300022: Beacher_Atlas_11
+    21300024: Beacher_Atlas_12
+    21300026: Beacher_Atlas_13
+    21300028: Beacher_Atlas_14
+    21300030: Beacher_Atlas_15
+    21300032: Beacher_Atlas_16
+    21300034: Beacher_Atlas_17
+    21300036: Beacher_Atlas_18
+    21300038: Beacher_Atlas_19
+    21300040: Beacher_Atlas_20
+    21300042: Beacher_Atlas_21
+    21300044: Beacher_Atlas_22
+    21300046: Beacher_Atlas_23
+    21300048: Beacher_Atlas_24
+    21300050: Beacher_Atlas_25
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -34,7 +60,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -82,9 +108,355 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Beacher_Atlas_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 812
+        width: 103
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Beacher_Atlas_1
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 794
+        width: 124
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Beacher_Atlas_2
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 797
+        width: 93
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Beacher_Atlas_3
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 807
+        width: 132
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Beacher_Atlas_4
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 801
+        width: 110
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Beacher_Atlas_5
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 804
+        width: 113
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Beacher_Atlas_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 552
+        width: 140
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Beacher_Atlas_7
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 546
+        width: 105
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Beacher_Atlas_8
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 543
+        width: 171
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Beacher_Atlas_9
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 620
+        width: 144
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Beacher_Atlas_10
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 601
+        width: 132
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Beacher_Atlas_11
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 306
+        width: 187
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Beacher_Atlas_12
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 448
+        width: 162
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Beacher_Atlas_13
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 459
+        width: 126
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Beacher_Atlas_14
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 246
+        width: 193
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Beacher_Atlas_15
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 274
+        width: 4
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Beacher_Atlas_16
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 224
+        width: 187
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Beacher_Atlas_17
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 235
+        width: 180
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Beacher_Atlas_18
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 187
+        width: 118
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Beacher_Atlas_19
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 264
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Beacher_Atlas_20
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 237
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Beacher_Atlas_21
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 21
+        width: 147
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Beacher_Atlas_22
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 17
+        width: 179
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Beacher_Atlas_23
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 18
+        width: 166
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Beacher_Atlas_24
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 16
+        width: 173
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Beacher_Atlas_25
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 23
+        width: 159
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 
