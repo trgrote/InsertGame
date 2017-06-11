@@ -8,10 +8,12 @@ using UnityEngine;
 public class CameraAnimationHandler : MonoBehaviour, IEventHandler
 {
 	private WhaleSpawner spawner;
+	FadeOutAndIn fade;
 
 	void Start()
 	{
 		spawner = FindObjectOfType<WhaleSpawner>();
+		fade = FindObjectOfType<FadeOutAndIn>();
 
 		EventBroadcaster.registerHandler<WhaleHasDiedEvent>(this);
 	}
@@ -31,7 +33,10 @@ public class CameraAnimationHandler : MonoBehaviour, IEventHandler
 
 	IEnumerator WaitAndSee()
 	{
-		yield return new WaitForSeconds(3);
+		yield return new WaitForSeconds(2f);
+		// Start Fade
+		fade.DoFade(0.5f);
+		yield return new WaitForSeconds(0.5f);
 		OnWhaleDeath();
 		yield return null;
 	}
