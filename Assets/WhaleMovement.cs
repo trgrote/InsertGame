@@ -13,6 +13,11 @@ public enum WhaleState
 	Done
 }
 
+public class WhaleHasDiedEvent : IGameEvent
+{
+	
+}
+
 public class WhaleMovement : MonoBehaviour {
 	private WhaleState state;
 	private Rigidbody2D body;
@@ -127,19 +132,18 @@ public class WhaleMovement : MonoBehaviour {
 			Instantiate (CraterPrefab, transform.position, Quaternion.identity);
 			var circlePosition = new Vector2 (transform.position.x, transform.position.y);
 			RaycastHit2D[] people = Physics2D.CircleCastAll (circlePosition, 5.0f, Vector2.up);
-			foreach (RaycastHit2D person in people) 
-			{
+			foreach (RaycastHit2D person in people) {
 				var personPosition = person.point;
 				var power = personPosition - circlePosition;
 				power.Normalize ();
 				power *= Random.Range (0, 10);
-				if (person.rigidbody != null) 
-				{
+				if (person.rigidbody != null) {
 					person.rigidbody.AddForce (power, ForceMode2D.Impulse);
 				}
 			}
 			//body.AddForce (new Vector2 (100, 100), ForceMode2D.Impulse);
 			state = WhaleState.Done;
+			EventBroadcaster.broadcastEvent (new WhaleHasDiedEvent());
 			break;
 		}
 	}
