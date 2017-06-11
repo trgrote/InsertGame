@@ -48,3 +48,6 @@ TagManager:
   - name: People
     uniqueID: 755336367
     locked: 0
+  - name: Whale
+    uniqueID: 2104056883
+    locked: 0
