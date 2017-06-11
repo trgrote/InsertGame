@@ -42,6 +42,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Beach
+    uniqueID: 2155343313
+    locked: 0
   - name: People
     uniqueID: 755336367
     locked: 0
