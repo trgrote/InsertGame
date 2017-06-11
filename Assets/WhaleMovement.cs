@@ -55,6 +55,9 @@ public class WhaleMovement : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		if (Input.GetKeyDown (KeyCode.Escape)) {
+			Application.Quit ();
+		}
 		if (Input.GetKeyDown (KeyCode.Space) && state == WhaleState.Sitting)
 		{
 			state = WhaleState.Moving;
@@ -117,6 +120,23 @@ public class WhaleMovement : MonoBehaviour {
 			GetComponent<TrailRenderer> ().enabled = true;
 			GetComponent<TrailRenderer> ().sortingLayerName = "Whale";
 			GetComponent<TrailRenderer> ().sortingOrder = 0;
+			var circlePosition2 = new Vector2 (transform.position.x, transform.position.y);
+			RaycastHit2D[] people2 = Physics2D.CircleCastAll (circlePosition2, 2.5f, Vector2.up);
+			foreach (RaycastHit2D person in people2) {
+				var personPosition2 = person.point;
+				var power2 = personPosition2 - circlePosition2;
+				power2.Normalize ();
+				power2 *= Random.Range (0, 10);
+				if (person.rigidbody != null) {
+					
+					var s = person.rigidbody.gameObject.GetComponent<PeopleState> ();
+					if (s != null) {
+						s.Alive = false;
+					} else if (person.rigidbody.gameObject.tag == "prop") {
+						Destroy (person.rigidbody.gameObject);
+					}
+				}
+			}
 			body.drag = 3.0f;
 			audio.volume -= Time.deltaTime;
 			if (Input.GetKeyDown (KeyCode.Space))
@@ -142,14 +162,20 @@ public class WhaleMovement : MonoBehaviour {
 			GetComponent<Explodable> ().explode ();
 			Instantiate (CraterPrefab, transform.position, Quaternion.identity);
 			var circlePosition = new Vector2 (transform.position.x, transform.position.y);
-			RaycastHit2D[] people = Physics2D.CircleCastAll (circlePosition, 5.0f, Vector2.up);
+			RaycastHit2D[] people = Physics2D.CircleCastAll (circlePosition, 7.5f, Vector2.up);
 			foreach (RaycastHit2D person in people) {
 				var personPosition = person.point;
 				var power = personPosition - circlePosition;
 				power.Normalize ();
-				power *= Random.Range (0, 10);
+				power *= Random.Range (0, 20);
 				if (person.rigidbody != null) {
 					person.rigidbody.AddForce (power, ForceMode2D.Impulse);
+					var s = person.rigidbody.gameObject.GetComponent<PeopleState> ();
+					if (s != null) {
+						s.Alive = false;
+					} else if (person.rigidbody.gameObject.tag == "prop") {
+						Destroy (person.rigidbody.gameObject);
+					}
 				}
 			}
 			//body.AddForce (new Vector2 (100, 100), ForceMode2D.Impulse);
