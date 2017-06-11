@@ -50,7 +50,7 @@ public class WhaleMovement : MonoBehaviour {
 			break;
 		case WhaleState.Jump2:
 			GetComponent<SpriteRenderer> ().sprite = SecondJump;
-			body.velocity = new Vector2 (0, 0);
+			body.drag = 3.0f;
 			timeAllotted += Time.deltaTime;
 			if (timeAllotted >= 3.0) {
 				state = WhaleState.Death;
