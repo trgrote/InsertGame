@@ -162,7 +162,7 @@ public class WhaleMovement : MonoBehaviour {
 			GetComponent<Explodable> ().explode ();
 			Instantiate (CraterPrefab, transform.position, Quaternion.identity);
 			var circlePosition = new Vector2 (transform.position.x, transform.position.y);
-			RaycastHit2D[] people = Physics2D.CircleCastAll (circlePosition, 7.5f, Vector2.up);
+			RaycastHit2D[] people = Physics2D.CircleCastAll (circlePosition, 7.5f, Vector2.up, 2.0f);
 			foreach (RaycastHit2D person in people) {
 				var personPosition = person.point;
 				var power = personPosition - circlePosition;
