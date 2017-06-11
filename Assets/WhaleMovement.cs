@@ -13,10 +13,9 @@ public enum WhaleState
 	Done
 }
 
-public class WhaleHasDiedEvent : IGameEvent
-{
-	
-}
+public class WhaleHasDiedEvent : IGameEvent {}
+public class WhaleMovedFirst : IGameEvent {}
+public class WhaleSpawned : IGameEvent {}
 
 public class WhaleMovement : MonoBehaviour {
 	private WhaleState state;
@@ -39,6 +38,8 @@ public class WhaleMovement : MonoBehaviour {
 	[SerializeField] private AudioClip ExplosionNoise;
 	[SerializeField] public GameObject CraterPrefab;
 
+	private bool userBegunInput = false;
+
 	// Use this for initialization
 	void Start () {
 		audio = GameObject.Find ("WhaleNoises").GetComponent<AudioSource> ();
@@ -48,17 +49,25 @@ public class WhaleMovement : MonoBehaviour {
 		timeAllotted = 0;
 		currentAngle = 0;
 		isPastCoast = false;
+
+		EventBroadcaster.broadcastEvent(new WhaleSpawned());
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown (KeyCode.Space) && state == WhaleState.Sitting) 
+		if (Input.GetKeyDown (KeyCode.Space) && state == WhaleState.Sitting)
 		{
 			state = WhaleState.Moving;
 			audio.clip = SwimNoise;
 			audio.Play ();
+
+			if (!userBegunInput)
+			{
+				EventBroadcaster.broadcastEvent(new WhaleMovedFirst());
+				userBegunInput = true;
+			}
 		}
-		if (Input.GetKeyUp (KeyCode.Space) && state == WhaleState.Moving) 
+		if (Input.GetKeyUp (KeyCode.Space) && state == WhaleState.Moving)
 		{
 			state = WhaleState.Jump1;
 			audio.clip = JumpNoise;
@@ -70,7 +79,7 @@ public class WhaleMovement : MonoBehaviour {
 			audio.Play ();
 			state = WhaleState.Jump2;
 		}
-		switch (state) 
+		switch (state)
 		{
 		case WhaleState.Moving:
 			if (Input.GetKey (KeyCode.LeftArrow)) {
@@ -89,12 +98,12 @@ public class WhaleMovement : MonoBehaviour {
 			GetComponent<SpriteRenderer> ().sprite = FirstJump;
 			GetComponent<SpriteRenderer> ().color = new Color (255, 255, 255);
 			timeAllotted += Time.deltaTime;
-			if (timeAllotted >= 1) 
+			if (timeAllotted >= 1)
 			{
 				audio.clip = SkidNoise;
 				audio.Play ();
 				if (isPastCoast) {
-					state = WhaleState.Jump2; 
+					state = WhaleState.Jump2;
 				} else {
 					timeAllotted = 0;
 					GetComponent<SpriteRenderer> ().sprite = Swimming;
@@ -110,7 +119,7 @@ public class WhaleMovement : MonoBehaviour {
 			GetComponent<TrailRenderer> ().sortingOrder = 0;
 			body.drag = 3.0f;
 			audio.volume -= Time.deltaTime;
-			if (Input.GetKeyDown (KeyCode.Space)) 
+			if (Input.GetKeyDown (KeyCode.Space))
 			{
 				state = WhaleState.Bloat;
 				audio.volume = 1.0f;
@@ -153,7 +162,7 @@ public class WhaleMovement : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D coll)
 	{
 		Debug.Log ("HIT THE COAST LINE.");
-		if (coll.gameObject.name == "WhaleCoastBreak") 
+		if (coll.gameObject.name == "WhaleCoastBreak")
 		{
 			isPastCoast = true;
 		}
