@@ -126,7 +126,7 @@ TrailRenderer:
   m_Time: Infinity
   m_Parameters:
     serializedVersion: 2
-    widthMultiplier: 1.75
+    widthMultiplier: 2
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -188,7 +188,7 @@ TrailRenderer:
       m_NumAlphaKeys: 2
     numCornerVertices: 4
     numCapVertices: 4
-    alignment: 0
+    alignment: 1
     textureMode: 0
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
@@ -233,7 +233,7 @@ MonoBehaviour:
   SkidNoise: {fileID: 8300000, guid: c93b2d623c6fc4cabb58198975b4f38f, type: 3}
   FartNoise: {fileID: 8300000, guid: 0629b081134ab446892966decc21cd66, type: 3}
   ExplosionNoise: {fileID: 8300000, guid: 2e4dd1930b56740c1870bfdd730d4dd2, type: 3}
-  CraterPrefab: {fileID: 1787640598613530, guid: 8158da3dbc55e3143ae851653b30c119,
+  CraterPrefab: {fileID: 1714520863973894, guid: cd354be6e7b424c5fbfe2d3ce7a6f78a,
     type: 2}
 --- !u!212 &212071168271091884
 SpriteRenderer:
